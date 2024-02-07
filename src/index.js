@@ -1,12 +1,17 @@
-const dictionary = [
-  "earth",
-  "plane",
-  "craft",
-  "plane",
-  "house",
-  "mouse",
-  "audio",
-];
+// const apiUrl = "https://api.dictionaryapi.dev/api/v2/entries/en/<word>";
+
+// async function fetchDictionaryData(word) {
+//   try {
+//     const response = await fetch(apiUrl + word);
+//     const data = await response.json();
+//     return data;
+//   } catch (error) {
+//     console.error("Error fetching data:", error);
+//     return null;
+//   }
+// }
+
+const dictionary = ["grape", "mango", "crane", "apple", "peach"];
 
 const state = {
   secret: dictionary[Math.floor(Math.random() * dictionary.length)],
@@ -171,6 +176,7 @@ function startup() {
   drawGrid(game);
 
   registerKeyboardEvents();
+  console.log(state.secret);
 }
 
 startup();

@@ -4,10 +4,10 @@ body {
 }
 
 :root {
-  --default: #121213;
-  --empty: #3a3a3c;
-  --wrong: #b59f3b;
-  --right: #538d4e;
+  --default: #2c2e34;
+  --empty: #e2e2e3;
+  --wrong: #e7c664;
+  --right: #9ed072;
 }
 
 #game {
