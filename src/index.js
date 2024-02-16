@@ -1,5 +1,6 @@
-const dictionary = ["grape", "mango", "crane", "apple", "peach"];
+import { testDictionary, realDictionary } from "./dictionary.js";
 
+const dictionary = realDictionary;
 const state = {
   secret: dictionary[Math.floor(Math.random() * dictionary.length)],
   grid: Array(6)
